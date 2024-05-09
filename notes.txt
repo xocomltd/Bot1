@@ -1,0 +1,82 @@
+
+#trees
+overview ==> frame1 == tree1
+websites ==> frame2 == tree2
+accounts ==> frame3 == tree3
+
+overview ==>
+
+# Bot Maker
+Bot Maker ==> bot_ready_frame == frame4
+wait create  Websites ==> frame5 == label_wait == btn_go_back
+accounts ==> frame_switch1 ==> optionmenu2 == frame_switch1 == website_options2
+Events frame_switch2 ==> optionmenu3 == frame_switch2
+
+entry_list1 == list_events
+entry_list2 == lists_Qty
+
+#Payements frames
+frame_payements
+frame_payedit
+
+label_pay15
+
+#entries example
+
+entry_pay13 = ctk.CTkEntry(frame_pay1, width=200, font=('Arial', 14, 'normal'), height=30, fg_color="#161616", bg_color="#161616",text_color='#e6e6e6', border_color="#808080", border_width=1, corner_radius=0,placeholder_text="card number", justify="center")
+
+
+entry_payps = ctk.CTkEntry(frame_pay2, width=200, font=('Arial', 14, 'normal'), height=30, fg_color="#161616", bg_color="#161616",text_color='#e6e6e6', border_color="#808080", border_width=1, corner_radius=0,placeholder_text="card number", justify="center")
+
+entry_payps.place(x=30, y=90)
+
+
+entry_payps = ctk.CTkEntry(frame_pay2, width=200, font=('Arial', 14, 'normal'), height=30, fg_color="#161616", bg_color="#161616",text_color='#e6e6e6', border_color="#808080", border_width=1, corner_radius=0,placeholder_text="password", justify="center")
+
+entry_payps.place(x=30, y=90)
+
+label_pay14 = ctk.CTkLabel(frame_pay1, text="Expiry Date", height=26, text_color='#fff', fg_color='#232323', font=('Arial', 15, 'normal'))
+
+label_pay14.place(x=x_center+15, y=130)
+
+#entries edit :
+
+entry_payeccv:
+
+entry_payeccv = ctk.CTkEntry(frame_pay1, width=200, font=('Arial', 14, 'normal'), height=30, fg_color="#161616", bg_color="#161616",text_color='#e6e6e6', border_color="#808080", border_width=1, corner_radius=0,placeholder_text="cvv", justify="center")
+
+entry_payeccv.place(x=30, y=450)
+
+
+#cardcredit
+
+label_card_num
+label_expiry_date
+label_payccv
+
+entry_paycn
+entry_payeccv:
+entry_payeex
+
+#paypal
+
+label_payemail
+label_paypass
+entry_email_account
+entry_paypass
+
+card_number = entry_paycn.get()
+expiry_date = entry_payeex.get()
+ccv = entry_payps.get()
+
+
+#labels
+
+btn_savecard
+
+label_pay14 = ctk.CTkLabel(frame_pay1, text="Expiry Date", height=26, text_color='#fff', fg_color='#232323', font=('Arial', 15, 'normal'))
+
+label_pay14.place(x=x_center+15, y=130)
+
+
+save_wsite():
